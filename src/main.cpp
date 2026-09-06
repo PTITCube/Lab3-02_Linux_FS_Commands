@@ -35,7 +35,7 @@ void setup() {
 }
 
 void loop() {
-    // Đọc lệnh từ Serial Monitor (hoặc từ LoRa trong thực tế)
+    // Đọc lệnh từ Serial Monitor
     if (Serial.available()) {
         String cmd = Serial.readStringUntil('\n');
         cmd.trim();
