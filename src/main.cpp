@@ -12,9 +12,9 @@ void setup() {
     storage.init();
 
     if (storage.isReady()) {
-        cdh.println("[CDH-FS] Shell CLI Ready (Commands: pwd, ls, mkdir, cd, touch, rm)");
+        cdh.println("CDH-FS: Shell CLI Ready (Commands: pwd, ls, mkdir, cd, touch, rm)");
     } else {
-        cdh.println("[CDH-FS] Error: SD Card not ready.");
+        cdh.println("CDH-FS: Error: SD Card not ready.");
     }
 }
 
