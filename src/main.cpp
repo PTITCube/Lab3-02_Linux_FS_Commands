@@ -12,8 +12,7 @@ void setup() {
     storage.init();
 
     if (storage.isReady()) {
-        cdh.println("CDH-FS: Shell CLI Ready (Go 'help' de xem danh sach lenh)");
-    } else {
+        } else {
         cdh.println("CDH-FS: Error: SD Card not ready.");
     }
 }
