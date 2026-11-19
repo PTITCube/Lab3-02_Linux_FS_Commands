@@ -12,7 +12,7 @@ void setup() {
     storage.init();
 
     if (storage.isReady()) {
-        cdh.println("CDH-FS: Shell CLI Ready (Commands: pwd, ls, mkdir, cd, touch, rm)");
+        cdh.println("CDH-FS: Shell CLI Ready (Go 'help' de xem danh sach lenh)");
     } else {
         cdh.println("CDH-FS: Error: SD Card not ready.");
     }
@@ -29,7 +29,7 @@ void loop() {
             if (response.length() > 0) {
                 cdh.println(response);
             } else {
-                cdh.println("Command not recognized.");
+                cdh.println("Command not recognized. Type 'help' for commands.");
             }
         }
     }
