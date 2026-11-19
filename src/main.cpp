@@ -28,8 +28,6 @@ void loop() {
             String response = storage.handleCommand(cmd);
             if (response.length() > 0) {
                 cdh.println(response);
-            } else {
-                cdh.println("Command not recognized. Type 'help' for commands.");
             }
         }
     }
