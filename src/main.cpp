@@ -5,10 +5,15 @@
 #include <PTITCube.h>
 
 PTIT_CDH cdh;
+PTIT_EPS eps;
 PTIT_Storage storage;
 
 void setup() {
     cdh.begin(115200);
+
+    // Kích hoạt hạ áp cấp nguồn ngoại vi trên PCB vệ tinh qua thư viện EPS
+    eps.setBuckState(true);
+
     storage.init();
 
     if (storage.isReady()) {
