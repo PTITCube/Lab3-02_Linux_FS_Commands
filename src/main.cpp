@@ -18,7 +18,7 @@ void setup() {
 
     if (storage.isReady()) {
         } else {
-        cdh.println("CDH-FS: Error: SD Card not ready.");
+        cdh.println("Storage: SD not ready");
     }
 }
 
